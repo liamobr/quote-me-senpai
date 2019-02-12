@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Quote Me Senpai";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="content">
+    <div class="content__child">
+        <blockquote>
+            <span id="quote-content">
+
+            </span>
+            <cite id="quote-cite">
+
+            </cite>
+        </blockquote>
+        <a id="generate-button" class="button secondary">
+            <i class="fas fa-undo"></i>
+            Generate
+        </a>
+        @Html.AntiForgeryToken()
+    </div>
+</div>

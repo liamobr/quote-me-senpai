@@ -1,0 +1,21 @@
+﻿@charset "utf-8";
+
+@import 'foundation';
+@import '_settings.scss';
+
+@include foundation-everything(false, false);
+
+@import 'modules/_utils.scss';
+
+.content {
+    position: relative;
+    height: 100vh;
+
+    .content__child {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
